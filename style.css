@@ -46,6 +46,19 @@ li a {
   text-decoration: none;
 }
 
+.six-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.courses {
+  font-size: .8rem;
+  font-weight: lighter;
+}
+
+.white {
+  background-color: white;
+}
 /* Head Banner */
 
 header {
@@ -169,7 +182,7 @@ nav span {
 }
 
 .column.left img {
-  width: 80%;
+  width: 77%;
   height: auto;
 }
 
@@ -191,6 +204,7 @@ nav span {
 .img-section {
   display: flex;
   align-items: center;
+  margin: .03rem 0;
   padding: .5rem 0;
   padding-left: .5rem;
   border: 1px solid gray;
@@ -210,11 +224,45 @@ nav span {
 }
 
 .darker-background {
-  background-color: darkgray;
+  background-color: lightgray;
 }
 
 /* Start Learning Section */
 
+.image-section {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem -1rem;
+  margin: 0 -5rem;
+}
+
+.start {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 3rem 0;
+  background-color: lightgray;
+}
+
+.start-learning {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.six {
+  width: 60%;
+  height: auto;
+}
+
 /* Thesis Exhibit Section */
+
+.thesis {
+  text-align: center;
+}
+
+.thesis-exhibit {
+  display: flex;
+}
 
 /* Bottom Banner Section */
