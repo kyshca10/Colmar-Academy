@@ -386,6 +386,19 @@ nav span {
   font-size: 1rem;
 }
 
+.last-images {
+  display: flex;
+  align-items: center;
+  margin: .03rem 0;
+  padding: .5rem 0;
+  padding-left: .5rem;
+}
+
+.last-images img {
+  width: 27%;
+  height: 8rem;
+}
+
 /* Footer Section */
 
 footer {
@@ -406,7 +419,6 @@ footer {
 }
 
 .terms {
-  display: flex;
   font-size: .8rem;
   color: gray;
 }
