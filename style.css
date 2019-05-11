@@ -56,6 +56,22 @@ li a {
 }
 /* Head Banner */
 
+@media only screen and (max-width: 560px) {
+  .header img, .black, .gray, .menu {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 10;
+    height: 3.6rem;
+    margin: auto;
+    padding-right: 2rem;
+  }
+}
+
 header {
   display: flex;
   align-items: center;
@@ -100,67 +116,108 @@ nav span {
 
 /* Gray Background Section */
 
-.container {
-  background-color: lightgray;
-  height: 5rem;
-  padding-top: 6.5rem;
-  height: 39rem;
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .images img {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .learn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .learn h1 {
+    font-size: 1rem;
+  }
+
+  .rightside {
+    width: 100%;
+    display: flex;
+  }
 }
 
-.learn-section {
+.container {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: -8rem
+  background-color: #bfbfbf;
+  padding-top: 4rem;
 }
 
 .images img {
-  height: 30rem;
+  width: 83%;
+  padding: 1.8rem 0;
+  padding-left: 2.2rem;
+}
+
+.rightside {
+  width: 40%;
+}
+
+.learn h3, p {
+  padding-bottom: 1.8rem;
+  color: #444444;
+}
+
+.learn h3 {
+  font-size: 2.2rem;
+}
+
+.learn p {
+  font-size: 1rem;
 }
 
 .rightside {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: 5rem;
+  padding: 1rem;
 }
 
 .learn {
   font-size: 2.2rem;
-  padding: 1.6rem 0;
   font-weight: bold;
-  color: #444444;
-}
-
-.learn h2 {
-  padding: .2rem .2rem;
-}
-
-.latin {
-  font-weight: bold;
-  color: #444444;
-}
-
-.latin p {
-  padding: .2rem .2rem;
 }
 
 .button {
   background-color: #444444;
-  padding: .5rem 0;
   text-align: center;
-  border-radius: .2rem;
+  font-size: 1rem;
+  font-weight: lighter;
   margin-top: 2rem;
-}
-
-.button span {
-  padding: 1rem 6.3rem;
+  padding: .5rem 5rem;
   color: white;
 }
 
 /* Orientation Date Section */
 
+@media only screen and (max-width: 500px) {
+  .columns {
+    width: 100%;
+  }
+
+  .column.left {
+    display: none;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .columns {
+  width: 100%;
   background-color: white;
   display: flex;
   align-items: center;
@@ -181,7 +238,7 @@ nav span {
 }
 
 .column.left img {
-  width: 77%;
+  width: 100%;
   height: auto;
 }
 
@@ -206,12 +263,13 @@ nav span {
   margin: .03rem 0;
   padding: .5rem 0;
   padding-left: .5rem;
-  border: 1px solid gray;
+  border: 1px solid #e0e0e0;
 }
 
 .img-section img {
   width: 27%;
   height: 8rem;
+  padding: .8rem .8rem;
 }
 
 .left {
@@ -223,10 +281,55 @@ nav span {
 }
 
 .darker-background {
-  background-color: lightgray;
+  background-color: #e0e0e0;
+}
+
+.mobile2 {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .start {
+    display: block;
+  }
+
+  .start-learning .image-section {
+    display: none;
+  }
+
+  .mobile2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: .8rem;
+  }
+
+  .mobile3 {
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444444;
+    background-color: #e0e0e0;
+    padding-top: .4rem;
+    margin-bottom: .3rem;
+    width: 90%;
+  }
+
+  .mobile3 span {
+    padding-top: 1.5rem;
+    padding-bottom: 1.3rem;
+    padding-left: .8rem;
+  }
 }
 
 /* Start Learning Section */
+
+@media only screen and (max-width: 500px) {
+  .column {
+    display: none;
+  }
+}
 
 .image-section {
   display: flex;
@@ -241,13 +344,13 @@ nav span {
   text-align: center;
   margin-top: 1.9rem;
   padding: 3rem 0;
-  background-color: lightgray;
+  background-color: #e0e0e0;
 }
 
 .start-learning {
   display: flex;
   justify-content: center;
-  background-color: lightgray;
+  background-color: #e0e0e0;
   padding-bottom: 1.8rem;
 }
 
@@ -397,16 +500,27 @@ nav span {
 .last-images img {
   width: 27%;
   height: 8rem;
+  padding: .8rem .8rem;
 }
 
 /* Footer Section */
+
+@media only screen and (max-width: 500px) {
+  .terms {
+    display: none;
+  }
+
+  .footer {
+    margin: auto;
+  }
+}
 
 footer {
   display: flex;
   width: 100%;
   height: 4.5rem;
   background-color: white;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #e0e0e0e0;
 }
 
 .footer {
