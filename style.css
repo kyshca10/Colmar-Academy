@@ -88,6 +88,15 @@ nav span {
   padding-right: 2.1rem;
 }
 
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  color: firebrick;
+}
+
 .black {
   color: black;
   font-weight: bold;
@@ -121,7 +130,7 @@ nav span {
 .container {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-color: #bfbfbf;
   padding-top: 4rem;
 }
@@ -136,6 +145,7 @@ nav span {
   width: 40%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding: 1rem;
   margin-left: -20rem;
 }
@@ -151,6 +161,7 @@ nav span {
 
 .learn2 {
   padding-bottom: .3rem;
+  margin-top: 8rem;
 }
 
 .learn p {
@@ -174,8 +185,18 @@ nav span {
   color: white;
 }
 
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button a:hover {
+  color: firebrick;
+}
+
 @media only screen and (max-width: 520px) {
   .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,16 +216,20 @@ nav span {
     flex-wrap: wrap;
   }
 
+  .learn2 {
+    margin-top: -1.5rem;
+  }
+
   .learn h3 {
     padding-top: -5rem;
   }
 
   .rightside {
-    width: 100%;
+    width: 85%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    margin: 0 auto;
+    margin-left: -.4rem;
   }
 
   .button {
@@ -302,21 +327,23 @@ nav span {
   }
 
   .img-section {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin: 0 auto;
     border: 1px solid white;
   }
 
   .img-section img {
-    width: 100%;
+    width: 80%;
     height: auto;
     align-items: flex-start;
   }
 
   .img-section.darker-background img {
     height: 220px;
-    width: 100%;
+    width: 80%;
   }
 
   .img-section.darker-background {
@@ -541,7 +568,7 @@ nav span {
   padding: .8rem .8rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
   .last-images {
     display: none;
   }
@@ -550,9 +577,15 @@ nav span {
     display: none;
   }
 
-  .video {
-    width: 100%;
+  .video-section {
+    width: 90%;
+  }
+
+  .video video {
+    width: 480px;
     height: auto;
+    margin-left: -1.3rem;
+    margin-bottom: -3.4rem;
   }
 }
 
@@ -580,6 +613,42 @@ footer {
   color: gray;
 }
 
+.terms a {
+  text-decoration: none;
+  color: gray;
+}
+
+.terms span:hover {
+  color: firebrick;
+}
+
+.social {
+  display: flex;
+  padding-top: .9rem;
+  padding-right: .9rem;
+}
+
+.social span {
+  color: gray;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: firebrick;
+}
+
+.one, .two, .three, .four {
+  padding: 0 .3rem;
+  color: black;
+}
+
+.social span {
+  font-weight: lighter;
+}
+
 @media only screen and (max-width: 500px) {
   .terms {
     display: none;
@@ -587,5 +656,14 @@ footer {
 
   .footer {
     margin: auto;
+  }
+
+  .social span {
+    display: none;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
   }
 }
